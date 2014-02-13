@@ -49,7 +49,7 @@ Example:
     ./traffic_analyzer.py -c 315 -p 35 -b 45 -t 30 -s -m videos/traffic.avi -v
 
 
-
+![Example Visualization of Tracked Objects](https://github.com/telescope7/TrafficFlowAnalysis/blob/master/exampleTracking.png)
 
 # Contact
 
