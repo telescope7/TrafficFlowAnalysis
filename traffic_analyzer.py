@@ -14,7 +14,7 @@ import csv
 from collections import defaultdict
 
 
-class Point:
+class Point(object):
 
     def __init__(self, frame, contour, cx, cy, radius):
         self.frame = frame
@@ -44,7 +44,7 @@ class Point:
         return (width, height, area)
 
 
-class MovingObject:
+class MovingObject(object):
 
     def __init__(self):
         self.frames = {}
@@ -148,7 +148,7 @@ class MovingObject:
             )
 
 
-class ObjectDatabase:
+class ObjectDatabase(object):
 
     def __init__(self):
         self.prev_OverlapMovingObjects = []
@@ -207,10 +207,9 @@ class ObjectDatabase:
                 v = (fx, m)
                 d[k].append(v)
 
-        if d:
-            for k in d.keys():
-                (cx, m) = max(d[k], key=lambda x: x[0])
-                cw.writerow(m.measure())
+        for k in d.keys():
+            (cx, m) = max(d[k], key=lambda x: x[0])
+            cw.writerow(m.measure())
 
         self.prev_OverlapMovingObjects = [
             mc for mc in self.prev_OverlapMovingObjects if mc.last_frame >= frame -
@@ -224,7 +223,7 @@ class ObjectDatabase:
             if int(opts.objectdiametermin) < (radius * 2):
                 order_contours.append((cx, contour))
 
-        if len(self.prev_OverlapMovingObjects) == 0:
+        if not self.prev_OverlapMovingObjects:
             logging.debug(
                 "Empty Moving Objects - Adding: " + str(len(order_contours)))
             for (cx, cnt) in order_contours:
