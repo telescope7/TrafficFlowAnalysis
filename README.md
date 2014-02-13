@@ -23,9 +23,13 @@ Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/teles
 ./traffic_analyzer.py [OPTIONS]
 
 '-d', '--debug', action='store_true',default=False, help="debug mode"
+
 '-m', '--movie', help='movie.avi'
+
 '-b', '--blur', help='blur setting'
+
 '-t', '--threshold', help='threshold'
+
 '-c', '--objectdiametermin', help='object minimum diameter'
 '-x', '--boxwindow', help='box window size'
 '-p', '--playbackspeed', help='playback speed'
