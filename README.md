@@ -17,17 +17,6 @@ statistics and measurements of the tracked object are reported.  Each tracked ob
 * Average heigh of enclosing contour
 * Average area of enclosing contour
 
----
-
-Table of Contents
-
-* <a href="#How to use">How to use</a>
-* <a href="#Contact">Contact</a>
-
----
-
-
-<a name="How to use"></a>
 
 # How to use
 
@@ -60,7 +49,7 @@ Example:
     ./traffic_analyzer.py -c 315 -p 35 -b 45 -t 30 -s -m videos/traffic.avi -v
 
 
-<a name="Contact"></a>
+
 
 # Contact
 
