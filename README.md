@@ -31,9 +31,19 @@ Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/teles
 '-t', '--threshold', help='threshold'
 
 '-c', '--objectdiametermin', help='object minimum diameter'
+
 '-x', '--boxwindow', help='box window size'
+
 '-p', '--playbackspeed', help='playback speed'
+
 '-v', '--visualize', action='store_true',  help='visualize tracking'
+
 '-s', '--subtractbg', action='store_true',  help='subtract background'
+
 '-a', '--accumulator', help='accumulator weight'
+
 '-o', '--output', help='output avi'
+
+Example:
+
+    ./traffic_analyzer.py -c 315 -p 35 -b 45 -t 30 -s -m videos/traffic.avi -v
