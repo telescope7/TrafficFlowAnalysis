@@ -1,4 +1,18 @@
-Traffic Flow Analyzer is a program designed to detect and measure uni-directional objects.  
+Traffic Flow Analyzer is a program designed to detect and measure uni-directional objects in videos.
+
+Each tracked object will be recorded on STDOUT.  The objects measurements include:
+
+-Number of frames tracked
+-First X coordinate 
+-First Y coordinate
+-Last X coordinate
+-Last Y coordinate
+-First frame tracked
+-Last frame tracked
+-Average radius of enclosing circle
+-Average width of enclosing contour
+-Average heigh of enclosing contour
+-Average area of enclosing contour
 
 ---
 
