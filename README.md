@@ -18,16 +18,10 @@ Each tracked object will be recorded on STDOUT.  The objects measurements includ
 
 Table of Contents
 
-* <a href="#Contact">Contact</a>
 * <a href="#How to use">How to use</a>
+* <a href="#Contact">Contact</a>
 
 ---
-
-<a name="Contact"></a>
-
-# Contact
-
-Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/telescope7/) 
 
 
 <a name="How to use"></a>
@@ -36,28 +30,36 @@ Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/teles
 
 ./traffic_analyzer.py [OPTIONS]
 
-'-d', '--debug', action='store_true',default=False, help="debug mode"
+'-d', '--debug', debug mode
 
-'-m', '--movie', help='movie.avi'
+'-m', '--movie', movie.avi
 
-'-b', '--blur', help='blur setting'
+'-b', '--blur', blur setting
 
-'-t', '--threshold', help='threshold'
+'-t', '--threshold', threshold
 
-'-c', '--objectdiametermin', help='object minimum diameter'
+'-c', '--objectdiametermin', object minimum diameter
 
-'-x', '--boxwindow', help='box window size'
+'-x', '--boxwindow', box window size
 
-'-p', '--playbackspeed', help='playback speed'
+'-p', '--playbackspeed'  playback speed
 
-'-v', '--visualize', action='store_true',  help='visualize tracking'
+'-v', '--visualize', visualize tracking
 
-'-s', '--subtractbg', action='store_true',  help='subtract background'
+'-s', '--subtractbg', subtract background
 
-'-a', '--accumulator', help='accumulator weight'
+'-a', '--accumulator', accumulator weight
 
-'-o', '--output', help='output avi'
+'-o', '--output', output avi
 
 Example:
 
     ./traffic_analyzer.py -c 315 -p 35 -b 45 -t 30 -s -m videos/traffic.avi -v
+
+
+<a name="Contact"></a>
+
+# Contact
+
+Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/telescope7/) 
+
