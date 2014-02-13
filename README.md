@@ -7,13 +7,14 @@ Table of Contents
 * <a href="#Contact">Contact</a>
 * <a href="#Features">Features: What is included in Traffic Flow Analyzer?</a>
 * <a href="#How to use">How to use</a>
+
 ---
 
 <a name="Contact"></a>
 
 # Contact
 
-[Matthew Thomas](https://github.com/telescope7/) 
+Traffic Flow Analyzer was developed by [Matthew Thomas](https://github.com/telescope7/) 
 
 <a name="Features"></a>
 
