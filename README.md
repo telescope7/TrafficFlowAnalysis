@@ -1,6 +1,9 @@
 Traffic Flow Analyzer is a program designed to detect and measure uni-directional objects in videos.
 
-Each tracked object will be recorded on STDOUT.  The objects measurements include:
+The software works by loading the specified video, applying a background subtraction if specified, blurring the frame by a specified amount, thresholding the frame by a specified amount, running a contour detection algorithm
+and selecting objects that surpass the minimum object diameter requirement.  These objects will be added to the Moving Object database if not present.  Otherwise, the object is compared to other previously tracked objects
+and mapped to the appropriate moving instance based on forward movement (using either a look ahead window or an overlapping object boundry analysis).  Once the object is no longer tracked or exits the field of view, the 
+statistics and measurements of the tracked object are reported.  Each tracked object will be recorded on STDOUT.  The objects measurements include:
 
 * Number of frames tracked
 * First X coordinate 
